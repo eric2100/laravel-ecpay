@@ -30,6 +30,8 @@ ECPAY_INVOICE_HASH_IV=
   - 產品資料單筆時可簡單只傳送 ItemName 及 TotalAmount
 ```php
 ...
+use TsaiYiHua\ECPay\Checkout;
+
     public function __construct(Checkout $checkout)
     {
         $this->checkout = $checkout;
